@@ -1,3 +1,45 @@
+header {
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: black;
+}
+
+header > nav {
+  display: flex;
+  gap: 40.75px;
+  align-items: center;
+
+  padding: 10px 0px;
+}
+
+.navigation-link {
+  color: white;
+
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 31.002px; /* 110.722% */
+  letter-spacing: 0.112px;
+}
+
+.navigation-link > img {
+  vertical-align: bottom;
+}
+
+.search-icon-custom {
+  width: 25px;
+  height: 43px;
+  overflow: hidden;
+}
+
 section {
   height: 100vh;
   width: 100%;
@@ -38,7 +80,7 @@ section {
 .typography > p {
   color: #6E6E73;
   text-align: center;
-  font-family: SF Pro Display, sans-serif;
+  font-family: 'SF Pro Display', sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -59,8 +101,169 @@ section {
   line-height: 29.001px; /* 138.1% */
   letter-spacing: 0.231px;
 
-  text-decoration: none;
-
   margin-top: 15px;
 }
 
+.streaming_now {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  background-image: url('./assets/now_streaming_background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.streaming_now > div {
+  display: flex;
+  flex: 1;
+}
+
+.streaming_now-actors {
+  display: flex;
+  flex: 1;
+}
+
+.streaming_now-actors > div {
+  display: flex;
+  flex: 1;
+}
+
+.actor-left p,
+.actor-right p {
+  color: #DED2B9;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
+  letter-spacing: -0.6px;
+}
+
+.actor-left {
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.actor-left > p {
+  margin-right: 300px;
+  margin-bottom: 40px;
+}
+
+.actor-right {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.actor-right > p {
+  margin-left: 250px;
+  margin-bottom: 40px;
+}
+
+.streaming_now-description {
+  justify-content: center;
+  align-items: flex-end;
+
+  padding-bottom: 50px;
+}
+
+.streaming_now-description p {
+  text-align: center;
+}
+
+.streaming_now-description .subtitle {
+  color: #F5F5F7;
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.002px; /* 110.722% */
+  letter-spacing: 0.112px;
+
+  margin-bottom: 14px;
+}
+
+.streaming_now-description .label {
+  color: #FFF;
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.001px; /* 138.1% */
+  letter-spacing: 0.231px;
+}
+
+.new_iphone {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-image: url('./assets/iphone_background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.new_iphone_info {
+  margin-top: 90px;
+}
+
+.new_iphone_info > h1 {
+  color: #1D1D1F;
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 107.143% */
+  letter-spacing: -0.28px;
+}
+
+.new_iphone_info > p {
+  color: #1D1D1F;
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.002px; /* 110.722% */
+  letter-spacing: 0.112px;
+  margin-top: 6px;
+}
+
+.new_iphone_info a {
+  color: #06C;
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.001px; /* 138.1% */
+  letter-spacing: 0.231px;
+}
+
+.new_iphone_info > div {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.new_iphone_info > div >:nth-child(1) {
+  padding-right: 8px;
+}
+
+#apple-products {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.apple-product-card {
+  display: flex;
+  flex: 1 0 50%;
+
+  height: 580px;
+}
